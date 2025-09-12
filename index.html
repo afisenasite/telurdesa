@@ -6539,12 +6539,17 @@
         display: inline-block;
         opacity: 0;
         transform: translateY(20px);
-        animation: fadeInLetter 0.5s forwards;
+        animation: fadeInLetter 2s forwards infinite;
       }
 
       /* Aturan animasi untuk memunculkan huruf satu per satu */
       @keyframes fadeInLetter {
-        to {
+        0%,
+        100% {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        50% {
           opacity: 1;
           transform: translateY(0);
         }
