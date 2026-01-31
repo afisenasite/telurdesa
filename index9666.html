@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id" class="no-js" itemtype="https://schema.org/WebPage" itemscope>
   <!-- Mirrored from localhost/telurfahim/?add-to-cart=1550 by HTTrack Website Copier/3.x [XR&CO'2014], Fri, 05 Sep 2025 07:16:13 GMT -->
   <!-- Added by HTTrack --><meta
@@ -54,24 +54,24 @@
           } catch (e) {}
         }
         function p(e, t, n) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
+          (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0));
           var t = new Uint32Array(
-              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+              e.getImageData(0, 0, e.canvas.width, e.canvas.height).data,
             ),
             a =
               (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
               e.fillText(n, 0, 0),
               new Uint32Array(
-                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data
+                e.getImageData(0, 0, e.canvas.width, e.canvas.height).data,
               ));
           return t.every(function (e, t) {
             return e === a[t];
           });
         }
         function u(e, t) {
-          e.clearRect(0, 0, e.canvas.width, e.canvas.height),
-            e.fillText(t, 0, 0);
+          (e.clearRect(0, 0, e.canvas.width, e.canvas.height),
+            e.fillText(t, 0, 0));
           for (
             var n = e.getImageData(16, 16, 1, 1), a = 0;
             a < n.data.length;
@@ -86,18 +86,18 @@
               return n(
                 e,
                 "\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f",
-                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f"
+                "\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f",
               )
                 ? !1
                 : !n(
                     e,
                     "\ud83c\udde8\ud83c\uddf6",
-                    "\ud83c\udde8\u200b\ud83c\uddf6"
+                    "\ud83c\udde8\u200b\ud83c\uddf6",
                   ) &&
                     !n(
                       e,
                       "\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f",
-                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f"
+                      "\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f",
                     );
             case "emoji":
               return !a(e, "\ud83e\udedf");
@@ -121,7 +121,7 @@
         }
         function t(e) {
           var t = s.createElement("script");
-          (t.src = e), (t.defer = !0), s.head.appendChild(t);
+          ((t.src = e), (t.defer = !0), s.head.appendChild(t));
         }
         "undefined" != typeof Promise &&
           ((o = "wpEmojiSettingsSupports"),
@@ -169,7 +169,7 @@
                       name: "wpTestEmojiSupports",
                     });
                   return void (r.onmessage = function (e) {
-                    c((n = e.data)), r.terminate(), t(n);
+                    (c((n = e.data)), r.terminate(), t(n));
                   });
                 } catch (e) {}
               c((n = g(i, f, p, u)));
@@ -178,18 +178,18 @@
           })
             .then(function (e) {
               for (var t in e)
-                (n.supports[t] = e[t]),
+                ((n.supports[t] = e[t]),
                   (n.supports.everything =
                     n.supports.everything && n.supports[t]),
                   "flag" !== t &&
                     (n.supports.everythingExceptFlag =
-                      n.supports.everythingExceptFlag && n.supports[t]);
-              (n.supports.everythingExceptFlag =
+                      n.supports.everythingExceptFlag && n.supports[t]));
+              ((n.supports.everythingExceptFlag =
                 n.supports.everythingExceptFlag && !n.supports.flag),
                 (n.DOMReady = !1),
                 (n.readyCallback = function () {
                   n.DOMReady = !0;
-                });
+                }));
             })
             .then(function () {
               return e;
@@ -356,8 +356,8 @@
         --wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);
         --wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);
         --wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);
-        --wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1),
-          6px 6px rgba(0, 0, 0, 1);
+        --wp--preset--shadow--outlined:
+          6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);
         --wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);
       }
       :where(.is-layout-flex) {
@@ -1521,7 +1521,7 @@
         grid-template-columns: minmax(0, 1fr);
       }
       .kb-row-layout-id1440_998e08-3f {
-        background-image: url("wp-content/uploads/2025/09/petani-tersenyum-1-scaled.png");
+        background-image: url("wp-content/uploads/2025/09/petani-tersenyum-1-scaled.jpg");
         background-size: cover;
         background-position: 52% 100%;
         background-attachment: scroll;
@@ -2820,7 +2820,7 @@
         grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .kb-row-layout-id1440_033fcf-d8 {
-        background-image: url("wp-content/uploads/2025/08/telur2.png");
+        background-image: url("wp-content/uploads/2025/08/telur2.jpg");
         background-size: contain;
         background-position: 0% 48%;
         background-attachment: scroll;
@@ -2876,7 +2876,7 @@
           order: 31;
         }
         .kb-row-layout-wrap.wp-block-kadence-rowlayout.kb-row-layout-id1440_033fcf-d8 {
-          background-image: url("wp-content/uploads/2025/08/telur2.png");
+          background-image: url("wp-content/uploads/2025/08/telur2.jpg");
           background-size: cover;
           background-position: center center;
           background-attachment: scroll;
@@ -3216,7 +3216,7 @@
           order: 31;
         }
         .kb-row-layout-wrap.wp-block-kadence-rowlayout.kb-row-layout-id1440_f79e69-a4 {
-          background-image: url("wp-content/uploads/2025/08/telur2.png");
+          background-image: url("wp-content/uploads/2025/08/telur2.jpg");
           background-size: cover;
           background-position: center center;
           background-attachment: scroll;
@@ -3550,8 +3550,10 @@
                       var(
                           --kb-default-row-gutter,
                           var(--global-row-gutter-md, 2rem)
-                        ) * 1
-                    ) / 2
+                        ) *
+                        1
+                    ) /
+                    2
                 )
             )
           )
@@ -3564,8 +3566,10 @@
                       var(
                           --kb-default-row-gutter,
                           var(--global-row-gutter-md, 2rem)
-                        ) * 1
-                    ) / 2
+                        ) *
+                        1
+                    ) /
+                    2
                 )
             )
           );
@@ -4194,8 +4198,10 @@
                       var(
                           --kb-default-row-gutter,
                           var(--global-row-gutter-md, 2rem)
-                        ) * 1
-                    ) / 2
+                        ) *
+                        1
+                    ) /
+                    2
                 )
             )
           )
@@ -4208,8 +4214,10 @@
                       var(
                           --kb-default-row-gutter,
                           var(--global-row-gutter-md, 2rem)
-                        ) * 1
-                    ) / 2
+                        ) *
+                        1
+                    ) /
+                    2
                 )
             )
           );
@@ -4920,7 +4928,7 @@
         grid-template-columns: minmax(0, 1fr);
       }
       .kb-row-layout-id1440_fa354a-d1 {
-        background-image: url("wp-content/uploads/2025/09/kepedulian-terhadap-peternak-scaled.png");
+        background-image: url("wp-content/uploads/2025/09/kepedulian-terhadap-peternak-scaled.jpg");
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
@@ -5022,7 +5030,7 @@
         grid-template-columns: minmax(0, 1fr);
       }
       .kb-row-layout-id1440_71f4bb-6d {
-        background-image: url("wp-content/uploads/2025/09/kepedulian-terhadap-peternak-scaled.png");
+        background-image: url("wp-content/uploads/2025/09/kepedulian-terhadap-peternak-scaled.jpg");
         background-size: cover;
         background-position: center center;
         background-attachment: fixed;
@@ -7115,13 +7123,13 @@
                                                     <img
                                                       loading="lazy"
                                                       decoding="async"
-                                                      src="wp-content/uploads/2025/09/omega-3.png"
+                                                      src="wp-content/uploads/2025/09/omega-3.jpg"
                                                       alt=""
                                                       width="2048"
                                                       height="2048"
                                                       class="kt-info-box-image wp-image-1690"
                                                       srcset="
-                                                        http://localhost/telurfahim/wp-content/uploads/2025/09/omega-3.png           2048w,
+                                                        http://localhost/telurfahim/wp-content/uploads/2025/09/omega-3.jpg           2048w,
                                                         http://localhost/telurfahim/wp-content/uploads/2025/09/omega-3-300x300.png    300w,
                                                         http://localhost/telurfahim/wp-content/uploads/2025/09/omega-3-1024x1024.png 1024w,
                                                         http://localhost/telurfahim/wp-content/uploads/2025/09/omega-3-150x150.png    150w,
@@ -7182,13 +7190,13 @@
                                                     <img
                                                       loading="lazy"
                                                       decoding="async"
-                                                      src="wp-content/uploads/2025/09/kaya-nutrisi.png"
+                                                      src="wp-content/uploads/2025/09/kaya-nutrisi.jpg"
                                                       alt=""
                                                       width="2048"
                                                       height="2048"
                                                       class="kt-info-box-image wp-image-1691"
                                                       srcset="
-                                                        http://localhost/telurfahim/wp-content/uploads/2025/09/kaya-nutrisi.png           2048w,
+                                                        http://localhost/telurfahim/wp-content/uploads/2025/09/kaya-nutrisi.jpg           2048w,
                                                         http://localhost/telurfahim/wp-content/uploads/2025/09/kaya-nutrisi-300x300.png    300w,
                                                         http://localhost/telurfahim/wp-content/uploads/2025/09/kaya-nutrisi-1024x1024.png 1024w,
                                                         http://localhost/telurfahim/wp-content/uploads/2025/09/kaya-nutrisi-150x150.png    150w,
@@ -9218,12 +9226,12 @@
                                     decoding="async"
                                     width="1499"
                                     height="1499"
-                                    src="wp-content/uploads/2025/09/pembayaran-aman-dan-mudah2.png"
+                                    src="wp-content/uploads/2025/09/pembayaran-aman-dan-mudah2.jpg"
                                     alt=""
                                     class="wp-image-1568"
                                     style="width: 120px; height: auto"
                                     srcset="
-                                      http://localhost/telurfahim/wp-content/uploads/2025/09/pembayaran-aman-dan-mudah2.png           1499w,
+                                      http://localhost/telurfahim/wp-content/uploads/2025/09/pembayaran-aman-dan-mudah2.jpg           1499w,
                                       http://localhost/telurfahim/wp-content/uploads/2025/09/pembayaran-aman-dan-mudah2-300x300.png    300w,
                                       http://localhost/telurfahim/wp-content/uploads/2025/09/pembayaran-aman-dan-mudah2-1024x1024.png 1024w,
                                       http://localhost/telurfahim/wp-content/uploads/2025/09/pembayaran-aman-dan-mudah2-150x150.png    150w,
@@ -10013,7 +10021,7 @@
     <script>
       document.documentElement.style.setProperty(
         "--scrollbar-offset",
-        window.innerWidth - document.documentElement.clientWidth + "px"
+        window.innerWidth - document.documentElement.clientWidth + "px",
       );
     </script>
     <script type="speculationrules">
